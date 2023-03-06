@@ -1,9 +1,10 @@
 import React from "react";
-
-export const Title = () => {
+import { useSelector } from "react-redux";
+export const Title = (props) => {
+  
   return (
     <div>
-      <h1>Test Project</h1>
+      <h1>{props.getData.domain}</h1>
     </div>
   );
 };
